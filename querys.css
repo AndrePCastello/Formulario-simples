@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 2300px) {
+    main{
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+    #informs{
+        display: flex;
+        justify-content: left;
+        
+    }   
+    #informs > p{
+        text-align: left;
+    }
+    #email, #nome{
+        margin-right: 20px;
+    }
+    #tele{
+        text-align: left;
+    }
+    #tel{
+        display: block;
+        margin: 0px;
+    }
+    #es{
+        display: block;
+        margin: auto;
+    }
+    }
+   

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="querys.css">
+</head>
+<body>
+    <header>
+            <h1>Formulário Padrão</h1>
+            <p>Inscrições para o liberdade.vip</p>
+    </header>
+    <main>
+        <form action="cadastro.php" method="get" id="infos">
+            <div id="informs">
+                <p><label for="nome"> Nome: </label> <input type="text" name="nome" id="nome" autocomplete="off"></p>
+                <p><label for="email">email: </label> <input type="email" name="email" id="email" autocomplete="off"></p> </div>
+                <div id="tele">
+                    <p><label for="tel">telefone: </label> <input type="tel" name="tel" id="tel"></p>
+                </div>
+            
+        </form>
+        <form action="cadastro.php" method="get" id="app">
+            <h3>Qual é a sua aplicação?</h3>
+            <p> <input type="radio" name="pro" id="pro"><label for="pro">Back-end</label></p>
+            <p> <input type="radio" name="pro" id="pro"><label for="pro">Front-end</label></p>
+            <p> <input type="radio" name="pro" id="pro"><label for="pro">Full-stack</label></p>
+        </form>
+            <div id="senioridade">
+                <h3>Senioridade</h3>
+                <select name="Senioridade" id="senior">
+                    <option selected disabled value="">selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Sênior</option>
+                </select>
+            </div>
+            <form action="cadastro.php" method="get" id="tech">
+                <h3>Selecione as tecnologias que você utiliza.</h3>
+                <p>
+                 <label for="py">python</label> <input type="checkbox" name="py" id="py" required>
+                </p>
+                <p><label for="js">Js</label> <input type="checkbox" name="js" id="js" required>
+                </p>
+                <p><label for="c">C#</label> <input type="checkbox" name="c" id="c" required>
+                </p>
+                <p><label for="r">Ruby</label> <input type="checkbox" name="r" id="r" required>
+                </p>
+                <p><label for="java">Java</label> <input type="checkbox" name="java" id="java" required></p>
+            </form>
+            <form action="cadastro.php" method="get">
+                <h3>Conte um pouco mais sobre a sua experiência</h3>
+                <p><label for="es">escreva aqui: </label></p>
+                <input type="text" name="es" id="es">
+                <p><input type="submit" value="enviar" id="enviar"></p>
+            </form>
+    </main>
+</body>
+</html>
